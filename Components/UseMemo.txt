@@ -1,0 +1,20 @@
+
+
+-const export TodoMEmo = memo(TodoDiplay,function equal(pre,next){
+    if(pre!==next){
+        return false
+    }
+    return true
+})
+
+ ** With const store =  UseSelector(state => state.count ,fucntion eqal(pre,next){
+     if(pre !== next){
+         
+         return false
+     }
+     return true
+ })
+
+-Import where You want With {data.map(()=><TodoMEmo {...data} />)}
+-it will not rerender Again and Again For Prev data
+
